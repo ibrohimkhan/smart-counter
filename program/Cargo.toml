@@ -1,5 +1,5 @@
 [package]
-name = "smart-counter"
+name = "smartcounter"
 version = "0.1.0"
 authors = ["Ibrokhim Kholmatov <ibrohimkhan@gmail.com>"]
 edition = "2021"

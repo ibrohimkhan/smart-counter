@@ -1,7 +1,7 @@
 #![cfg(feature = "test-bpf")]
 use borsh::{BorshDeserialize, BorshSerialize};
 
-use smart_counter::{
+use smartcounter::{
     entrypoint::process_instruction,
     id,
     instruction::SmartCounterInstruction,
@@ -22,7 +22,7 @@ struct Env {
 
 impl Env {
     async fn new() -> Self {
-        let program_test = ProgramTest::new("smart-counter", id(), processor!(process_instruction));
+        let program_test = ProgramTest::new("smartcounter", id(), processor!(process_instruction));
         let mut ctx = program_test.start_with_context().await;
 
         let admin = Keypair::new();
