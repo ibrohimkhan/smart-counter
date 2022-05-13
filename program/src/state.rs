@@ -70,27 +70,25 @@ mod test {
     }
 
     #[test]
-    #[ignore = "issues with pubkeys, will fix it later"]
     fn test_get_settings_address_with_seed() {
         let (address, bump) = Settings::get_settings_pubkey_with_bump();
         assert_eq!(
             address,
-            Pubkey::from_str("4voA9ct4uAJuBVLNfoaPiU1VgpatMpGKRLHfvP8CZ147").unwrap()
+            Pubkey::from_str("EndezmND2wTgMp7CsAUZtGwQbdGweL4gxuAZ6i77aFfg").unwrap()
         );
 
         assert_eq!(bump, 255);
     }
 
     #[test]
-    #[ignore = "issues with pubkeys, will fix it later"]
     fn test_get_smart_counter_pubkey() {
         let pubkey = SmartCounter::get_smart_counter_pubkey(
-            &Pubkey::from_str("FKr2pLkJXFpnJf2sUtStVwDiQPq61rKngtXyhLw8SQbF").unwrap(),
+            &Pubkey::from_str("B6n7uLSPK6m8mwPxkJ2t8a1sGaXqocF2fabZ6XPBdSQ9").unwrap(),
         );
 
         assert_eq!(
             pubkey,
-            Pubkey::from_str("9JVaomeo7Ps8D41whGLkz1c1wzWGfKpk62Mopnf3B274").unwrap()
+            Pubkey::from_str("3ojoCDtMrAygHWZ4uDW9E9B7VkHst2CiH3fbLmaBLvtq").unwrap()
         );
     }
 }

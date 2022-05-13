@@ -12,7 +12,7 @@ test-bpf = []
 
 [dependencies]
 borsh = "0.9.3"
-thiserror = "1.0.24"
+thiserror = "1.0.25"
 solana-program = "1.10.8"
 
 [dev-dependencies]

@@ -95,13 +95,13 @@ impl SmartCounterInstruction {
 
 #[cfg(test)]
 mod test {
-    use std::str::FromStr;
     use super::*;
+    use std::str::FromStr;
 
     #[test]
     fn test_serialization() {
         let data = SmartCounterInstruction::UpdateSettings {
-            admin: Pubkey::from_str("EG7uy9FCe4AxL9AavEA1nXDfo2AoBo1ZtBCV224hmoub")
+            admin: Pubkey::from_str("6GVwyLvuW8mW4UZRUbUgauZeTBMPq3sgGgYpunUAd9cQ")
                 .unwrap()
                 .to_bytes(),
             inc_step: 19,
@@ -113,8 +113,8 @@ mod test {
         assert_eq!(
             data,
             [
-                2, 197, 7, 117, 129, 90, 151, 178, 48, 248, 208, 199, 5, 17, 134, 51, 183, 155,
-                153, 209, 86, 177, 138, 127, 133, 1, 191, 178, 128, 179, 23, 157, 98, 19, 0, 0, 0,
+                2, 78, 66, 224, 205, 49, 170, 169, 123, 253, 137, 85, 42, 136, 62, 85, 129, 235,
+                240, 23, 107, 80, 42, 142, 119, 154, 129, 192, 157, 221, 14, 144, 117, 19, 0, 0, 0,
                 99, 0, 0, 0
             ]
         );
